@@ -31,7 +31,6 @@
     swaylock-effects
     xdg-utils
     wl-clipboard
-    #wluma
     
     # GUI utilities
     _1password-gui
@@ -100,26 +99,8 @@
     #  org.gradle.console=verbose
     #  org.gradle.daemon.idletimeout=3600000
     #'';
-
-    #".config/wluma/config.toml".text = ''
-    #[als.none]
-    #[[output.backlight]]
-    #name = "eDP-1"
-    #path = "/sys/class/backlight/intel_backlight"
-    #capturer = "wlroots"
-    #'';
   };
 
-  # You can also manage environment variables but you will have to manually
-  # source
-  #
-  #  ~/.nix-profile/etc/profile.d/hm-session-vars.sh
-  #
-  # or
-  #
-  #  /etc/profiles/per-user/marcus/etc/profile.d/hm-session-vars.sh
-  #
-  # if you don't want to manage your shell through Home Manager.
   home.sessionVariables = {
     EDITOR = "subl -nw";
     MOZ_ENABLE_WAYLAND="1";
@@ -134,7 +115,6 @@
     enable = true;
   };
 
-  # programs.fzf.enableZshIntegration = true;
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
