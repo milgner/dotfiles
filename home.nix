@@ -190,7 +190,8 @@
       #layoutTabbed = ".";
       input = {
         "*" = {
-          xkb_layout = "dvorak";
+          xkb_layout = "us";
+          xkb_variant = "dvorak";
         };
       };
       
