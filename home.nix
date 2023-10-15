@@ -118,6 +118,9 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    settings = {
+      format = "$all";
+    };
   };
 
   programs.direnv = {
@@ -190,8 +193,9 @@
       #layoutTabbed = ".";
       input = {
         "*" = {
-          xkb_layout = "us";
-          xkb_variant = "dvorak";
+          xkb_layout = "us,de";
+          xkb_variant = "dvorak,";
+          xkb_options = "grp:caps_switch";
         };
       };
       
